@@ -10,15 +10,20 @@
   <header>
     <section>
       <h1>Магазин "Техномарт"</h1>
-      <a href-"index.html"><img src="#" alt="Логотип Техномаркет"></a>
+      <a href="index.html"><img src="img\Logo-technomart.png" width="221" height="46" alt="Логотип Техномаркет"></a>
+
+      <h2>Основные элементы</h2>
       <ul>
-        <h2>Основные элементы</h2>
+
         <li>
+          <img src="img\icon-search.svg" width="21" height="25" alt="Иконка поиска" />
           <p>Поиск:
             <input type="text" size="40"></p>
           <!-- Тут будет форма поиска -->
-        <li><a href="#">Закладки</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><img src="img\icon-bookmark.svg" width="15" height="21" alt="Иконка закладки" />
+          <a href="#">Закладки</a></li>
+        <li><img src="img\cart-icon.svg" width="19" height="19" alt="Иконка корзины" />
+          <a href="#">Корзина</a></li>
         <li><a href="#">Оформить заказ</a></li>
       </ul>
       <section>
@@ -28,14 +33,16 @@
           строительных материалов
           и инструментов для ремонта
         </p>
-        <p>
+        <p><img src="img\icon-phone.svg" width="21" height="23" alt="Иконка телефона" />
           <a href="#">+7(812)555-05-55</a>
           г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8
         </p>
       </section>
       <section>
         <h2>Личный кабинет</h2>
+        <img src="img\icon-user.svg" width="20" height="20" alt="Иконка пользователя" />
         <button type="button">Равшан Джамшутович</button>
+        <img src="img\icon-logout.svg" width="20" height="20" alt="Иконка выхода" />
         <button type="button">Выход</button>
         <a href="#">Мои заказы</a>
         <a href="#">Личный кабинет</a>
@@ -63,24 +70,25 @@
   <main>
     <h1>Каталог товаров</h1>
     <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.HTML">Каталог</a></li>
-      <li><a href="instruments.HTML">Инструмент</a></li>
-      <li><a href="catalog.HTML">Каталог</a></li>
+      <li><a href="index.html"><img src="img\icon-home.svg" width="15" height="15" alt="Иконка на Главную" /> </a>
+        <img src="img\icon-right-small.svg" width="15" height="15" alt="Иконка маленькой стрелочки" /></li>
+      <li><a href="catalog.HTML">Каталог</a>
+        <img src="img\icon-right-small.svg" width="15" height="15" alt="Иконка маленькой стрелочки" /></li>
+      <li><a href="instruments.HTML">Инструмент</a>
+        <img src="img\icon-right-small.svg" width="15" height="15" alt="Иконка маленькой стрелочки" /></li>
+      <li><a href="#">Перфораторы</a></li>
     </ul>
 
     <h2>Перфораторы</h2>
-
+    <aside>
+      <h3>Фильтр</h3>
+      <p>Фильтр</p>
+      <p>Цена</p>
+      <!-- Тут будет форма фильтра с указанием производителя и питания-->
+    </aside>
 
 
     <section>
-      <div>
-        <h3>Фильтр</h3>
-        <p>Фильтр</p>
-        <p>Цена</p>
-        <!-- Тут будет форма фильтра с указанием производителя и питания-->
-      </div>
-
       <div>
         <h3>Сортировка</h3>
         <!-- Тут будет форма сортировки -->
@@ -92,11 +100,14 @@
               <span>BFG 3000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 3000">
+              <img src="img\Perforator_5.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 3000" />
             </a></p>
           <p>
             <a href="#">22500 Р.</a>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">15500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
         </li>
 
         <li>
@@ -105,11 +116,15 @@
               <span>BFG 6000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 6000">
+              <img src="img\Perforator_6.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 6000" />
             </a></p>
           <p>
             <a href="#">30500 Р.</a>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">25500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
+
         </li>
 
         <li>
@@ -117,11 +132,15 @@
               <span>Перформатор BOSCH</span>
               <span>BFG 2000</span>
             </a></h3>
+          <img src="img\new flag.png" width="60" height="60" alt="Флаг Нового" />
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 2000">
+              <img src="img\Perforator_7.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 2000" />
             </a></p>
           <p>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">12500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
         </li>
 
         <li>
@@ -130,11 +149,14 @@
               <span>BFG 3000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 3000">
+              <img src="img\Perforator_5.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 3000" />
             </a></p>
           <p>
             <a href="#">22500 Р.</a>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">15500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
         </li>
 
         <li>
@@ -143,11 +165,15 @@
               <span>BFG 6000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 6000">
+              <img src="img\Perforator_6.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 6000" />
             </a></p>
           <p>
             <a href="#">30500 Р.</a>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">25500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
+
         </li>
 
         <li>
@@ -156,10 +182,13 @@
               <span>BFG 2000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 2000">
+              <img src="img\Perforator_7.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 2000" />
             </a></p>
           <p>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">12500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
         </li>
 
         <li>
@@ -168,11 +197,14 @@
               <span>BFG 3000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 3000">
+              <img src="img\Perforator_5.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 3000" />
             </a></p>
           <p>
             <a href="#">22500 Р.</a>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">15500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
         </li>
 
         <li>
@@ -181,11 +213,15 @@
               <span>BFG 6000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 6000">
+              <img src="img\Perforator_6.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 6000" />
             </a></p>
           <p>
             <a href="#">30500 Р.</a>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">25500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
+
         </li>
 
         <li>
@@ -194,17 +230,16 @@
               <span>BFG 2000</span>
             </a></h3>
           <p><a href="#">
-              <img src="#" width="100" height="50" alt="Фото перформатора BOSCH BFG 2000">
+              <img src="img\Perforator_7.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 2000" />
             </a></p>
           <p>
+            <img src="img\btn copy 14.svg" width="142" height="39" alt="Фон цены" />
             <a href="#">12500 Р.</a></p>
+          <p><a href="#">Купить</a>
+            <button type="button" name="faivorite">В закладки</button></p>
         </li>
       </ul>
 
-      <div>
-        <a href="#">Купить</a>
-        <button type="button" name="faivorite">В закладки</button>
-      </div>
 
       <ul>
         <li><a>1</a></li>
@@ -226,9 +261,7 @@
   <footer>
     <section>
       <h2>Контакты и навигация по сайту</h2>
-      <img src="#" alt="Логотип компании Техномарт" />
-      <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br />
-        +7 (812) 555-05-55</p>
+      <img src="img\logo-2.png" width="220" height="68" alt="Логотип компании Техномарт" />
       <ul>
         <li><a href="about-company.HTML">Компания</a></li>
         <li><a href="news.HTML">Новости</a></li>
@@ -236,6 +269,9 @@
         <li><a href="delivery.HTML">Доставка</a></li>
         <li><a href="contacts.HTML">Контакты</a></li>
       </ul>
+      <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br />
+        +7 (812) 555-05-55</p>
+
       <ul>
         <li><a href="#">Материалы</a></li>
         <li><a href="#">Техника</a></li>
@@ -250,17 +286,20 @@
         Все права защищены</p>
 
       <ul>
-        <li><a href="#">ВКонтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#"><img src="img\vk-icon.svg" height="45" width="45" alt="Вконтакте" /></a></li>
+        <li><a href="#"><img src="img\fb-icon.svg" height="45" width="45" alt="Фейсбук" /></a></li>
+        <li><a href="#"><img src="img\insta-icon.svg" height="45" width="45" alt="Инстаграм" /></a></li>
       </ul>
-      <p>Обратная связь:</p>
-      <a href="#">mail@htmlacademy.ru</a>
-      <p>Разработано - </p>
-      <a href="www.htmlacademy.ru">htmlacademy.ru</a>
+      <p>Обратная связь:
+        <a href="#">mail@htmlacademy.ru</a> </p>
+
+      <p>Разработано - <a href="www.htmlacademy.ru">htmlacademy.ru</a></p>
+
 
     </section>
 
-
-
   </footer>
+
+</body>
+
+</html>

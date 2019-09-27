@@ -9,15 +9,13 @@
 <body>
   <header>
     <section>
-      <h1>Магазин "Техномарт"</h1>
+      <h1 class="visually-hidden">Магазин "Техномарт"</h1>
       <a href="index.html"><img src="img\Logo-technomart.png" width="221" height="46" alt="Логотип Техномаркет"></a>
 
-      <h2>Основные элементы</h2>
+      <h2 class="visually-hidden">Основные элементы</h2>
       <ul>
         <li>
-          <p>Поиск:
-            <input type="text" size="40"></p>
-          <!-- Тут будет форма поиска -->
+          <label>Поиск: <input type="text" size="40"></label>
         <li>
           <a href="#">Закладки</a></li>
         <li>
@@ -25,7 +23,7 @@
         <li><a href="#">Оформить заказ</a></li>
       </ul>
       <section>
-        <h2>Основная информация</h2>
+        <h2 class="visually-hidden">Основная информация</h2>
         <p>
           Интернет-магазин
           строительных материалов
@@ -37,7 +35,7 @@
         </p>
       </section>
       <section>
-        <h2>Личный кабинет</h2>
+        <h2 class="visually-hidden">Личный кабинет</h2>
 
         <a href="#">
           <img src="img\icon-user.svg" width="20" height="20" alt="Иконка пользователя" />
@@ -68,7 +66,7 @@
 
 
   <main>
-    <h1>Каталог товаров</h1>
+    <h2 class="visually-hidden">Каталог товаров</h2>
     <ul>
       <li><a href="index.html">Главная </a>
       </li>
@@ -82,23 +80,53 @@
     <h2>Перфораторы</h2>
     <aside>
       <h3>Фильтр</h3>
-      <p>Фильтр</p>
-      <p>Цена</p>
-      <!-- Тут будет форма фильтра с указанием производителя и питания-->
+      <fieldset>
+        <legend>
+          Цена
+        </legend>
+        <ul>
+          <li><input type="range" name="price-range" aria-label="Ползунок цены" /></li>
+          <li><input type="number" name="low-price" aria-label="Ввод нижней цены" /></li>
+          <li> - </li>
+          <li><input type="number" name="max-price" aria-label="Ввод верхней цены" /></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Производители:
+        </legend>
+        <ul>
+          <li><label><input type="checkbox" name="bosch-chekbox" checked />Bosch</label></li>
+          <li><label><input type="checkbox" name="interskol-checkbox" />Интерскол</label></li>
+          <li><label><input type="checkbox" name="makita-checkbox" checked />Makita</label></li>
+          <li><label><input type="checkbox" name="Dewalt-checkbox" />Dewalt</label></li>
+          <li><label><input type="checkbox" name="hitachi-checkbox" />Hitachi</label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Питание:
+        </legend>
+        <ul>
+          <li><label><input type="radio" name="akk-radio" checked />Аккумуляторные</label></li>
+          <li><label><input type="radio" name="network-radio" />Сетевые</label></li>
+        </ul>
+      </fieldset>
+      <a href="#">Показать</a>
     </aside>
 
 
     <section>
       <div>
         <h3>Сортировка</h3>
-        <!-- Тут будет форма сортировки -->
+        <!-- Тут будет форма сортировки. Еще не проходили-->
       </div>
       <ul>
         <li>
-        <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 3000</span>
-            </a>
+          <a href="#">
+            <span>Перформатор BOSCH</span>
+            <span>BFG 3000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_5.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 3000" />
             </a></p>
@@ -109,10 +137,10 @@
         </li>
 
         <li>
-        <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 6000</span>
-            </a>
+          <a href="#">
+            <span>Перформатор BOSCH</span>
+            <span>BFG 6000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_6.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 6000" />
             </a></p>
@@ -126,9 +154,9 @@
 
         <li>
           <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 2000</span>
-            </a>
+            <span>Перформатор BOSCH</span>
+            <span>BFG 2000</span>
+          </a>
           <img src="img\new flag.png" width="60" height="60" alt="Флаг Нового" />
           <p><a href="#">
               <img src="img\Perforator_7.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 2000" />
@@ -141,9 +169,9 @@
 
         <li>
           <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 3000</span>
-            </a>
+            <span>Перформатор BOSCH</span>
+            <span>BFG 3000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_5.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 3000" />
             </a></p>
@@ -156,9 +184,9 @@
 
         <li>
           <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 6000</span>
-            </a>
+            <span>Перформатор BOSCH</span>
+            <span>BFG 6000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_6.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 6000" />
             </a></p>
@@ -172,9 +200,9 @@
 
         <li>
           <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 2000</span>
-            </a>
+            <span>Перформатор BOSCH</span>
+            <span>BFG 2000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_7.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 2000" />
             </a></p>
@@ -185,10 +213,10 @@
         </li>
 
         <li>
-        <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 3000</span>
-            </a>
+          <a href="#">
+            <span>Перформатор BOSCH</span>
+            <span>BFG 3000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_5.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 3000" />
             </a></p>
@@ -200,10 +228,10 @@
         </li>
 
         <li>
-        <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 6000</span>
-            </a>
+          <a href="#">
+            <span>Перформатор BOSCH</span>
+            <span>BFG 6000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_6.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 6000" />
             </a></p>
@@ -216,10 +244,10 @@
         </li>
 
         <li>
-        <a href="#">
-              <span>Перформатор BOSCH</span>
-              <span>BFG 2000</span>
-            </a>
+          <a href="#">
+            <span>Перформатор BOSCH</span>
+            <span>BFG 2000</span>
+          </a>
           <p><a href="#">
               <img src="img\Perforator_7.png" width="220" height="180" alt="Фото перформатора BOSCH BFG 2000" />
             </a></p>
@@ -250,7 +278,7 @@
 
   <footer>
     <section>
-      <h2>Контакты и навигация по сайту</h2>
+      <h2 class="visually-hidden">Контакты и навигация по сайту</h2>
       <a href="index.html"><img src="img\logo-2.png" width="220" height="68" alt="Логотип компании Техномарт" /></a>
       <ul>
         <li><a href="about-company.HTML">Компания</a></li>
@@ -271,7 +299,7 @@
     </section>
 
     <section>
-      <h2>Подвал сайта</h2>
+      <h2 class="visually-hidden">Подвал сайта</h2>
       <p>© 2010-2019 Компания "Техномарт" <br />
         Все права защищены</p>
 
@@ -289,6 +317,13 @@
     </section>
 
   </footer>
+
+  <section>
+    <h2 class="visually-hidden">Уведомление о добавлении товара в корзину</h2>
+    <p>Товар добавлен в корзину!</p>
+    <a href="#">Оформить заказ</a>
+    <a href="#">Продолжить покупки</a>
+  </section>
 
 </body>
 

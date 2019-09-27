@@ -9,10 +9,10 @@
 <body>
   <header>
     <section>
-      <h1>Магазин "Техномарт"</h1>
+      <h1 class="visually-hidden">Магазин "Техномарт"</h1>
       <a href="index.html"><img src="img\Logo-technomart.png" width="221" height="46" alt="Логотип Техномаркет"></a>
 
-      <h2>Основные элементы</h2>
+      <h2 class="visually-hidden">Основные элементы</h2>
       <ul>
         <li>
           <p>Поиск:
@@ -26,7 +26,7 @@
           <a href="#">Оформить заказ</a></li>
       </ul>
       <section>
-        <h2>Основная информация</h2>
+        <h2 class="visually-hidden">Основная информация</h2>
         <p>
           Интернет-магазин
           строительных материалов
@@ -59,9 +59,9 @@
 
 
   <main>
-    <h1>Магазин "Техномарт"</h1>
+
     <section>
-      <h2>Товары и услуги</h2>
+      <h2 class="visually-hidden">Товары и услуги</h2>
       <ul>
         <li> <img src="img\icon-1.svg" width="47" height="69" alt="Иконка Материалов" />
           <img src="img\new flag.png" width="60" height="60" alt="Иконка Нового товара" />
@@ -103,7 +103,7 @@
     </section>
 
     <section>
-      <h2>Популярные товары</h2>
+      <h2 class="visually-hidden">Популярные товары</h2>
       <p>Популярные товары:</p>
       <a href="#">Все популярные товары</a>
       <ul>
@@ -138,7 +138,7 @@
     </section>
 
     <section>
-      <h2>Производители</h2>
+      <h2 class="visually-hidden">Производители</h2>
       <ul>
         <li><a href="#"><img src="img\bosch.png" width="127" height="35" alt="Логотип компании Bosch" /></a></li>
         <li><a href="#"><img src="img\Makita.png" width="127" height="35" alt="Логотип компании Makita" /></a></li>
@@ -152,7 +152,7 @@
     </section>
 
     <section>
-      <h2>Дополнительные услуги</h2>
+      <h2 class="visually-hidden">Дополнительные услуги</h2>
       <h3>Сервисы</h3>
       <p>Хороший интеренет-магазин отличается от плохого не только ценами!<br />
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -177,7 +177,7 @@
     </section>
 
     <section>
-      <h2>О компании и контакты</h2>
+      <h2 class="visually-hidden">О компании и контакты</h2>
       <div>
         <h3>Компания "Техномарт"</h3>
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -201,11 +201,16 @@
         <button type="button">Заблудились? Напишите нам!</button>
       </div>
     </section>
+    <section>
+      <a href="#" aria-label="Офис компании, г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8">
+        <img src="img\Map-big.png" width="965" height="463" alt="Карта" /></a>
+
+    </section>
   </main>
 
   <footer>
     <section>
-      <h2>Контакты и навигация по сайту</h2>
+      <h2 class="visually-hidden">Контакты и навигация по сайту</h2>
       <img src="img\logo-2.png" width="220" height="68" alt="Логотип компании Техномарт" />
       <ul>
         <li><a href="about-company.HTML">Компания</a></li>
@@ -244,6 +249,19 @@
     </section>
 
   </footer>
+
+  <section>
+    <h2>Форма обратной связи</h2>
+    <form method="post" action="#">
+      <p><label>Ваше имя: <input type="text" size="30" placeholder="Имя Фамилия" /></label></p>
+      <p><label>Ваш e-mail: <input type="email" size="30" placeholder="email@example.com"></label></p>
+      <p><label>Текст письма: <input type="text" size="30" placeholder="В свободной форме"></label></p>
+      <button aria-label="Кнопка отправить сообщение">Отправить</button>
+    </form>
+    <button aria-label="Кнопка закрыть форму обратной связи">Закрыть</button>
+  </section>
+
+
 
 
 </body>

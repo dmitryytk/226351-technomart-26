@@ -239,9 +239,20 @@ nav {
   line-height: 18px;
 }
 
-.text-line-through {
+.price {
   text-decoration: line-through;
   color: #afafaf;
+}
+
+.price:after {
+content: '';
+position: absolute;
+top: 1px;
+right: -36px;
+width: 0;
+height: 0;
+border: 18px solid transparent;
+border-left-color: #ee3643;
 }
 
 .companies li {
@@ -462,7 +473,7 @@ color: #c5c5c5;
   padding-left: 20px;
 }
 
-.numbers li {
+.pagination li {
   color: black;
   font-size: 13px;
   line-height: 18px;
@@ -470,21 +481,22 @@ color: #c5c5c5;
   padding: 15px;
 }
 
-.numbers a {
+.pagination a {
   color: black;
+  display: block;
 }
 
-.numbers a :first-child {
+.pagination a :first-child {
   background-color: #ee3643;
   color: white;
 }
-.numbers-selected  {
+.pagination-active  {
   background-color: #ee3643;
   color: white;
 }
 
-.numbers a :hover,
-.numbers a :focus {
+.pagination a :hover,
+.pagination a :focus {
   text-decoration: underline;
 }
 

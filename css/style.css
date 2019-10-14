@@ -244,7 +244,12 @@ nav {
   color: #afafaf;
 }
 
-.price:after {
+.price-red{
+background: #ee3643;
+position: relative;
+}
+
+.price-red:after {
 content: '';
 position: absolute;
 top: 1px;
@@ -433,10 +438,6 @@ border-left-color: #ee3643;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
-}
-
-.filter fieldset {
-  border: noe;
 }
 
 .filter li {
